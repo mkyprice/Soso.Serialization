@@ -1,0 +1,12 @@
+{
+  "name": "com.chronicvagrant.soso-serialization",
+  "version": "1.0.0",
+  "displayName": "Soso.Serialization",
+  "description": "Easily convert to and from binary",
+  "unity": "6000.3",
+  "author": {
+    "name": "Ky Price",
+    "email": "chronicvagrant@gmail.com",
+    "url": "https://chronicvagrant.com"
+  }
+}

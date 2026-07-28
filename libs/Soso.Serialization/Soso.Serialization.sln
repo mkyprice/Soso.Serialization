@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soso.Serialization.Benchmarks", "Soso.Serialization.Benchmarks\Soso.Serialization.Benchmarks.csproj", "{2B3DB878-01C5-4609-95BD-6AF0F1D68C38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soso.Serialization", "Soso.Serialization\Soso.Serialization.csproj", "{48E701CE-E54E-444D-A134-D0EFD1077E31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soso.Serialization.Tests", "Soso.Serialization.Tests\Soso.Serialization.Tests.csproj", "{19716ADB-8AA0-4145-A486-A8FAA847239F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B3DB878-01C5-4609-95BD-6AF0F1D68C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B3DB878-01C5-4609-95BD-6AF0F1D68C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B3DB878-01C5-4609-95BD-6AF0F1D68C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B3DB878-01C5-4609-95BD-6AF0F1D68C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E701CE-E54E-444D-A134-D0EFD1077E31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E701CE-E54E-444D-A134-D0EFD1077E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E701CE-E54E-444D-A134-D0EFD1077E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E701CE-E54E-444D-A134-D0EFD1077E31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19716ADB-8AA0-4145-A486-A8FAA847239F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19716ADB-8AA0-4145-A486-A8FAA847239F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19716ADB-8AA0-4145-A486-A8FAA847239F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19716ADB-8AA0-4145-A486-A8FAA847239F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

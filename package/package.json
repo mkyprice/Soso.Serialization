@@ -1,6 +1,6 @@
 {
   "name": "com.chronicvagrant.soso-serialization",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Soso.Serialization",
   "description": "Easily convert to and from binary",
   "unity": "6000.3",

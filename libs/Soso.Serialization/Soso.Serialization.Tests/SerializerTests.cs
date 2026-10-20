@@ -71,6 +71,55 @@ public class Tests
     }
 
     [Test]
+    public void ListClassTest()
+    {
+        List<Demo> value = new List<Demo>();
+        value.Add(new Demo()
+        {
+            Test = "Hello",
+            TestF = 1.1f,
+        });
+        value.Add(new Demo()
+        {
+            Test = "there",
+            TestF = 2.2f,
+        });
+
+        var config = SerializationConfig.Default;
+
+        byte[] bytes = SosoSerializer.Serialize(value, SerializationFlags.None, config);
+
+        var result = SosoSerializer.Deserialize<List<Demo>>(bytes, SerializationFlags.None, config);
+
+        Assert.That(result, Is.EqualTo(value));
+    }
+
+    [Test]
+    public void ListClassTestEmbededType()
+    {
+        List<Demo> value = new List<Demo>();
+        value.Add(new Demo()
+        {
+            Test = "Hello",
+            TestF = 1.1f,
+        });
+        value.Add(new Demo()
+        {
+            Test = "there",
+            TestF = 2.2f,
+        });
+
+        var config = SerializationConfig.Default
+            .AddSerializer(new DemoSerializer());
+
+        byte[] bytes = SosoSerializer.Serialize(value, SerializationFlags.EmbedType, config);
+
+        var result = SosoSerializer.Deserialize(bytes, config);
+
+        Assert.That(result, Is.EqualTo(value));
+    }
+
+    [Test]
     public void ArrayTest()
     {
         string[] value = new string[]

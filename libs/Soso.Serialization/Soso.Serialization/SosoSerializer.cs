@@ -67,6 +67,11 @@ namespace Soso.Serialization
                 type = value.GetType();
             }
 
+            if (type.IsGenericType)
+            {
+                type = type.GetGenericTypeDefinition();
+            }
+
             ObjectWriter serializer = new ObjectWriter(config, config.GetSerializers());
             serializer.Serialize(ref writer, value, type, flags);
 

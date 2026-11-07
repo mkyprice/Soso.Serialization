@@ -2,6 +2,7 @@
 using System.Numerics;
 using Soso.Serialization.Binary;
 using Soso.Serialization.Logging;
+using Soso.Utils.Logging;
 
 namespace Soso.Serialization.Benchmarks;
 
@@ -9,7 +10,7 @@ class Program
 {
 	static void Main(string[] args)
 	{
-		Log.Level = LOG_LEVEL.Debug;
+		Log.Logger.Level = LOG_LEVEL.Debug;
 		// RunStreamerBenchmarks(1_000_000);
 		// RunSerializerBenchmarks(1_000_000);
 		RunVector2Benchmarks(1_000_000);
